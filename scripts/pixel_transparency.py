@@ -307,7 +307,7 @@ class ScriptPostprocessingUpscale(scripts_postprocessing.ScriptPostprocessing):
 
         if (save_original):
             file_name, _=images.save_image(pp.image,basename= "original" ,path=opts.outdir_img2img_samples,  extension=opts.samples_format, info= pp.info)
-        if (save_atlas):
+        if (save_transparent):
             file_name, _=images.save_image(remove_bg(pp.image),basename= "atlas" ,path=opts.outdir_img2img_samples,  extension=opts.samples_format, info= pp.info) 
 
 
