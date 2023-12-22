@@ -173,7 +173,7 @@ def process(img):
 
     trans = transforms.Compose([transforms.ToTensor(), transforms.Normalize((0.5, 0.5, 0.5), (0.5, 0.5, 0.5))])
 
-    return img #trans(img)[None, :, :, :]
+    return trans(img)[None, :, :, :]
 
 
 def to_image(tensor, pixel_size, upscale_after):
