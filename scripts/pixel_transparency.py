@@ -349,7 +349,7 @@ class ScriptPostprocessingUpscale(scripts_postprocessing.ScriptPostprocessing):
         
 
         pp.image=pixel_output
-        pp.info["Pixelization pixel size"] = pixel_size
+        #pp.info["Pixelization pixel size"] = pixel_size
 
         if file_name :
             file_id=extract_number_from_filename(str(file_name)) 
