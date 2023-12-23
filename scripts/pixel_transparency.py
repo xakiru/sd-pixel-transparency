@@ -351,7 +351,8 @@ class ScriptPostprocessingUpscale(scripts_postprocessing.ScriptPostprocessing):
         pp.image=pixel_output
         pp.info["Pixelization pixel size"] = pixel_size
 
-        file_id=extract_number_from_filename(str(file_name)) 
-        current_time = datetime.datetime.now()
-        print("{} > {}".format(current_time,file_id))
+        if file_name :
+            file_id=extract_number_from_filename(str(file_name)) 
+            current_time = datetime.datetime.now()
+            print("{} > {}".format(current_time,file_id))
 
